@@ -1,0 +1,31 @@
+{
+  "name": "trello-todo-backend",
+  "version": "1.0.0",
+  "description": "Backend for TODO List application with Trello integration",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "migrate": "knex migrate:latest",
+    "migrate:rollback": "knex migrate:rollback",
+    "seed": "knex seed:run",
+    "seed:make": "knex seed:make"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.4.0",
+    "@fastify/multipart": "^7.7.3",
+    "@fastify/static": "^6.12.0",
+    "axios": "^1.11.0",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.24.3",
+    "form-data": "^4.0.4",
+    "knex": "^3.0.1",
+    "mysql2": "^3.14.3",
+    "sharp": "^0.32.6",
+    "sqlite3": "^5.1.7",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

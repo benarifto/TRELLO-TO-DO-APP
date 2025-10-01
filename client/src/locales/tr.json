@@ -1,0 +1,153 @@
+{
+  "app": {
+    "title": "TO-DO APP",
+    "loading": "Yükleniyor..."
+  },
+  "navigation": {
+    "home": "Ana Sayfa",
+    "addTodo": "Yeni TODO Ekle",
+    "todoList": "TODO Listesi"
+  },
+  "home": {
+    "welcome": "TODO Yöneticinize Hoş Geldiniz",
+    "description": "Güçlü TODO uygulamamızla görevlerinizi verimli bir şekilde organize edin. Kolayca oluşturun, yönetin ve ilerlemenizi takip edin.",
+    "addFirstTodo": "İlk TODO'nuzu Ekleyin",
+    "viewTodos": "Tüm TODO'ları Görüntüle",
+    "features": "Neden TODO Uygulamamızı Seçmelisiniz?",
+    "feature1": {
+      "title": "Kolay Görev Yönetimi",
+      "description": "Sezgisel arayüz ile görevlerinizi oluşturun, düzenleyin ve organize edin"
+    },
+    "feature2": {
+      "title": "Akıllı Kategorilendirme",
+      "description": "Daha iyi iş akışı için görevleri kategorilere ve önceliklere göre organize edin"
+    },
+    "feature3": {
+      "title": "İlerleme Takibi",
+      "description": "Görsel göstergelerle ilerlemenizi izleyin ve motivasyonunuzu koruyun"
+    },
+    "feature4": {
+      "title": "Çok Dilli Destek",
+      "description": "Daha iyi deneyim için uygulamayı tercih ettiğiniz dilde kullanın"
+    }
+  },
+  "addTodo": {
+    "title": "Yeni TODO Ekle",
+    "description": "TODO listenize eklemek için yeni bir görev oluşturun. Başlamak için aşağıdaki detayları doldurun.",
+    "backToHome": "Ana Sayfaya Dön",
+    "viewAllTodos": "Tüm TODO'ları Görüntüle"
+  },
+  "editTodo": {
+    "title": "TODO Düzenle",
+    "description": "TODO bilgilerini güncelleyin"
+  },
+  "todoList": {
+    "title": "TODO Listeniz",
+    "description": "Tüm görevlerinizi tek bir yerde yönetin ve organize edin. Hızlıca bulmak için filtreleri kullanın.",
+    "filterByStatus": "Duruma Göre Filtrele",
+    "filterByCategory": "Kategoriye Göre Filtrele",
+    "sortBy": "Sırala",
+    "allStatuses": "Tüm Durumlar",
+    "allCategories": "Tüm Kategoriler",
+    "pending": "Bekliyor",
+    "inProgress": "Devam Ediyor",
+    "completed": "Tamamlandı",
+    "dateCreated": "Oluşturulma Tarihi",
+    "priority": "Öncelik",
+    "title": "Başlık",
+    "dueDate": "Bitiş Tarihi",
+    "addNewTodo": "Yeni TODO Ekle",
+    "loading": "TODO'larınız yükleniyor...",
+    "noTodos": "TODO Bulunamadı",
+    "noTodosDescription": "Henüz hiç TODO oluşturmadınız. İlk görevinizi ekleyerek başlayın!",
+    "createFirstTodo": "İlk TODO'nuzu Oluşturun",
+    "totalTodos": "Toplam TODO",
+    "pendingTodos": "Bekleyen TODO",
+    "completedTodos": "Tamamlanan TODO",
+    "completionRate": "Tamamlanma Oranı"
+  },
+  "todo": {
+    "title": "Başlık",
+    "description": "Açıklama",
+    "category": "Kategori",
+    "importance": "Önem",
+    "status": "Durum",
+    "createdAt": "Oluşturulma Tarihi",
+    "updatedAt": "Güncellenme Tarihi",
+    "image": "Resim",
+    "actions": "İşlemler"
+  },
+  "importance": {
+    "high": "Yüksek",
+    "medium": "Orta",
+    "low": "Düşük"
+  },
+  "status": {
+    "pending": "Bekliyor",
+    "in-progress": "Devam Ediyor",
+    "completed": "Tamamlandı"
+  },
+  "categories": {
+    "general": "Genel",
+    "englishCourse": "İngilizce Kursu",
+    "bills": "Faturalar",
+    "health": "Sağlık",
+    "shopping": "Alışveriş"
+  },
+  "forms": {
+    "addTodo": "Yeni TODO Ekle",
+    "editTodo": "TODO Düzenle",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "update": "Güncelle",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "markCompleted": "Tamamlandı Olarak İşaretle",
+    "changeImportance": "Önem Değiştir"
+  },
+  "validation": {
+    "titleRequired": "Başlık zorunludur",
+    "titleMaxLength": "Başlık en fazla 100 karakter olabilir",
+    "categoryRequired": "Kategori seçimi zorunludur",
+    "importanceRequired": "Önem seviyesi zorunludur",
+         "imageFormat": "Sadece PNG, JPG ve JPEG formatları desteklenir",
+     "imageSize": "Resim boyutu 5MB'dan küçük olmalıdır"
+  },
+  "filters": {
+    "title": "Filtreler",
+    "startDate": "Başlangıç Tarihi",
+    "endDate": "Bitiş Tarihi",
+    "category": "Kategori",
+    "status": "Durum",
+    "importance": "Önem",
+    "apply": "Uygula",
+    "clear": "Temizle",
+    "allCategories": "Tüm Kategoriler",
+    "allStatuses": "Tüm Durumlar",
+    "allImportance": "Tüm Önem Seviyeleri"
+  },
+  "pagination": {
+    "previous": "Önceki",
+    "next": "Sonraki",
+    "page": "Sayfa",
+    "of": "/",
+    "itemsPerPage": "Sayfa başına öğe"
+  },
+  "messages": {
+    "todoCreated": "TODO başarıyla oluşturuldu",
+    "todoUpdated": "TODO başarıyla güncellendi",
+    "todoDeleted": "TODO başarıyla silindi",
+    "statusUpdated": "Durum başarıyla güncellendi",
+    "importanceUpdated": "Önem seviyesi başarıyla güncellendi",
+    "confirmDelete": "Bu TODO'yu silmek istediğinizden emin misiniz?",
+    "error": "Bir hata oluştu",
+    "trelloError": "Trello ile senkronizasyon hatası"
+  },
+     "language": {
+     "tr": "Türkçe",
+     "en": "English"
+   },
+   "common": {
+     "close": "Kapat"
+   }
+}

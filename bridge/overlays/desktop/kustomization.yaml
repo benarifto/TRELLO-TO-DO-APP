@@ -1,0 +1,11 @@
+#! kustomization.yaml
+# Generated code, do not edit
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+    - ../../base
+patches:
+    - path: js-client-service.yaml
+    - path: js-server-service.yaml
+    - path: mysql-db-mysql-data-persistentVolumeClaim.yaml
+    - path: mysql-db-service.yaml

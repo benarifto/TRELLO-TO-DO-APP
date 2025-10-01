@@ -1,0 +1,33 @@
+#! js-client-deployment.yaml
+# Generated code, do not edit
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: js-client
+    namespace: trello-kopya
+    labels:
+        com.docker.compose.project: trello-kopya
+        com.docker.compose.service: js-client
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            com.docker.compose.project: trello-kopya
+            com.docker.compose.service: js-client
+    strategy:
+        type: Recreate
+    template:
+        metadata:
+            labels:
+                com.docker.compose.project: trello-kopya
+                com.docker.compose.service: js-client
+                com.docker.compose.network.appnet: "true"
+        spec:
+            restartPolicy: unless-stopped
+            containers:
+                - name: js-client
+                  image: trello-kopya-js-client
+                  imagePullPolicy: IfNotPresent
+                  ports:
+                    - name: js-client-8080
+                      containerPort: 8080

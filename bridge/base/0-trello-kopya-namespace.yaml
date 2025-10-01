@@ -1,0 +1,8 @@
+#! 0-trello-kopya-namespace.yaml
+# Generated code, do not edit
+apiVersion: v1
+kind: Namespace
+metadata:
+    name: trello-kopya
+    labels:
+        com.docker.compose.project: trello-kopya

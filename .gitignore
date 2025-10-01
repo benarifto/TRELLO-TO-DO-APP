@@ -1,0 +1,19 @@
+# Node.js modülleri
+node_modules/
+
+# Paket lock veya log dosyaları (opsiyonel)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VSCode ayarları
+.vscode/
+
+# Docker cache veya local dosyalar
+*.env
+*.bak
+*.rar
+
+# Build / dağıtım dosyaları (opsiyonel)
+dist/
+build/

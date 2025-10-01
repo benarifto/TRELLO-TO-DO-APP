@@ -1,0 +1,60 @@
+#! js-server-deployment.yaml
+# Generated code, do not edit
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: js-server
+    namespace: trello-kopya
+    labels:
+        com.docker.compose.project: trello-kopya
+        com.docker.compose.service: js-server
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            com.docker.compose.project: trello-kopya
+            com.docker.compose.service: js-server
+    strategy:
+        type: Recreate
+    template:
+        metadata:
+            labels:
+                com.docker.compose.project: trello-kopya
+                com.docker.compose.service: js-server
+                com.docker.compose.network.appnet: "true"
+        spec:
+            restartPolicy: unless-stopped
+            containers:
+                - name: js-server
+                  image: trello-kopya-js-server
+                  imagePullPolicy: IfNotPresent
+                  env:
+                    - name: DB_HOST
+                      value: "mysql-db"
+                    - name: DB_NAME
+                      value: "trello_todo_db"
+                    - name: DB_PASSWORD
+                      value: "example_password"
+                    - name: DB_PORT
+                      value: "3306"
+                    - name: DB_USER
+                      value: "trello_user"
+                    - name: MAX_FILE_SIZE
+                      value: "2097152"
+                    - name: NODE_ENV
+                      value: "development"
+                    - name: PORT
+                      value: "3000"
+                    - name: TRELLO_BOARD_ID
+                      value: ""
+                    - name: TRELLO_KEY
+                      value: ""
+                    - name: TRELLO_LIST_ID
+                      value: ""
+                    - name: TRELLO_TOKEN
+                      value: ""
+                    - name: UPLOAD_PATH
+                      value: "./uploads"
+                  ports:
+                    - name: js-server-3000
+                      containerPort: 3000

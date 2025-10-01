@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Test</title>
+</head>
+<body>
+    <h1>API Test</h1>
+    <button onclick="testCategories()">Test Categories API</button>
+    <button onclick="testTodos()">Test Todos API</button>
+    <div id="results"></div>
+
+    <script>
+        const API_BASE = 'http://localhost:3000/api';
+        
+        async function testCategories() {
+            try {
+                const response = await fetch(`${API_BASE}/categories`);
+                const data = await response.json();
+                document.getElementById('results').innerHTML = 
+                    `<h3>Categories Response:</h3><pre>${JSON.stringify(data, null, 2)}</pre>`;
+            } catch (error) {
+                document.getElementById('results').innerHTML = 
+                    `<h3>Categories Error:</h3><pre>${error.message}</pre>`;
+            }
+        }
+        
+        async function testTodos() {
+            try {
+                const response = await fetch(`${API_BASE}/todos`);
+                const data = await response.json();
+                document.getElementById('results').innerHTML = 
+                    `<h3>Todos Response:</h3><pre>${JSON.stringify(data, null, 2)}</pre>`;
+            } catch (error) {
+                document.getElementById('results').innerHTML = 
+                    `<h3>Todos Error:</h3><pre>${error.message}</pre>`;
+            }
+        }
+    </script>
+</body>
+</html>

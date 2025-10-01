@@ -1,0 +1,89 @@
+# Node.js dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build outputs
+dist/
+build/
+out/
+
+# IDE/editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Version control
+.git/
+.gitignore
+.svn/
+.hg/
+
+# Logs and debug
+npm-debug.log
+yarn-debug.log
+*.log
+debug/
+
+# Test and coverage
+test/
+tests/
+.pytest_cache/
+.coverage
+
+# Python cache (not present, but for completeness)
+__pycache__/
+*.pyc
+*.pyo
+
+# Go (not present, but for completeness)
+/vendor/
+*.test
+.go-cache/
+
+# Java (not present, but for completeness)
+target/
+*.class
+.gradle/
+
+# Environment and secrets
+.env
+.env.*
+server/.env
+server/env.example
+*.env
+*.pem
+*.key
+*.crt
+config.local.*
+*.local.yml
+
+# SQLite database
+server/dev.sqlite3
+
+# Documentation and markdown
+docs/
+*.md
+README*
+PROJECT-SUMMARY.md
+SETUP.md
+
+# Docker files
+Dockerfile*
+docker-compose*
+
+# Temporary files and folders
+tmp/
+temp/
+*.tmp
+.local/
+local/
+
+# Miscellaneous
+uploads/
+
+# Exclude lock files from ignore (explicitly allowed)
+!package-lock.json
+!client/package-lock.json
+!server/package-lock.json

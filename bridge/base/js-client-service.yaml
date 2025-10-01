@@ -1,0 +1,23 @@
+# check if there is at least one published port
+
+#! js-client-service.yaml
+# Generated code, do not edit
+apiVersion: v1
+kind: Service
+metadata:
+    name: js-client-published
+    namespace: trello-kopya
+    labels:
+        com.docker.compose.project: trello-kopya
+        com.docker.compose.service: js-client
+spec:
+    selector:
+        com.docker.compose.project: trello-kopya
+        com.docker.compose.service: js-client
+    ports:
+        - name: js-client-8080
+          port: 8080
+          protocol: TCP
+          targetPort: js-client-8080
+
+# check if there is at least one published port

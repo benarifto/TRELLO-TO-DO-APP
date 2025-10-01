@@ -1,0 +1,17 @@
+#! kustomization.yaml
+# Generated code, do not edit
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+    - 0-trello-kopya-namespace.yaml
+    - appnet-network-policy.yaml
+    - js-client-deployment.yaml
+    - js-client-expose.yaml
+    - js-client-service.yaml
+    - js-server-deployment.yaml
+    - js-server-expose.yaml
+    - js-server-service.yaml
+    - mysql-db-deployment.yaml
+    - mysql-db-expose.yaml
+    - mysql-db-mysql-data-persistentVolumeClaim.yaml
+    - mysql-db-service.yaml

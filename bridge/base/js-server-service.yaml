@@ -1,0 +1,21 @@
+#! js-server-service.yaml
+# Generated code, do not edit
+apiVersion: v1
+kind: Service
+metadata:
+    name: js-server-published
+    namespace: trello-kopya
+    labels:
+        com.docker.compose.project: trello-kopya
+        com.docker.compose.service: js-server
+spec:
+    selector:
+        com.docker.compose.project: trello-kopya
+        com.docker.compose.service: js-server
+    ports:
+        - name: js-server-3000
+          port: 3000
+          protocol: TCP
+          targetPort: js-server-3000
+
+# check if there is at least one published port
